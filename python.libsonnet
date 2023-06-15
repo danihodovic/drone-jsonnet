@@ -20,7 +20,7 @@ local installDepsStep = pythonStepCommon {
         python /tmp/install-poetry.py -y
       fi
     |||,
-    '$POETRY_HOME/bin/poetry install --no-root',
+    '$POETRY_HOME/bin/poetry install',
   ],
 };
 
