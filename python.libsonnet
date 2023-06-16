@@ -21,6 +21,7 @@ local installDepsStep = pythonStepCommon {
       fi
     |||,
     '$POETRY_HOME/bin/poetry install',
+    'apt-get update && apt-get install ffmpeg libsm6 libxext6  -y',
   ],
 };
 
